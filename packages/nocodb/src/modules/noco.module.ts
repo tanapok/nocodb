@@ -150,6 +150,8 @@ import { DataV3Service } from '~/services/v3/data-v3.service';
 import { FiltersV3Service } from '~/services/v3/filters-v3.service';
 import { SortsV3Service } from '~/services/v3/sorts-v3.service';
 import { TablesV3Service } from '~/services/v3/tables-v3.service';
+import { DataEnhancedV1Controller } from '~/controllers/enhanced-v1/data-enhanced-v1.controller';
+import { DataEnhancedV1Service } from '~/services/enhanced-v1/data-enhanced-v1.service';
 import { ViewRowColorController } from '~/controllers/view-row-color.controller';
 import { AttachmentUrlUploadHandler } from '~/services/emit-handler/attachment-url-upload.handler';
 
@@ -243,6 +245,9 @@ export const nocoModuleMetadata = {
           ColumnsV3Controller,
           SortsV3Controller,
           FiltersV3Controller,
+
+          /* Enhanced V1 APIs */
+          DataEnhancedV1Controller,
 
           /* Datas */
           DataTableController,
@@ -342,6 +347,9 @@ export const nocoModuleMetadata = {
     PublicDatasExportService,
     DataV3Service,
 
+    /* Enhanced V1 APIs */
+    DataEnhancedV1Service,
+
     {
       provide: 'IViewsV3Service',
       useClass: ViewsV3Service,
@@ -414,6 +422,7 @@ export const nocoModuleMetadata = {
     DataTableService,
     DataV3Service,
     DataAttachmentV3Service,
+    DataEnhancedV1Service,
     'IViewsV3Service',
 
     AttachmentUrlUploadHandler,
