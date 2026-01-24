@@ -353,8 +353,8 @@ importers:
         specifier: ^1.7.5
         version: 1.7.5
       nocodb-sdk:
-        specifier: 0.301.1
-        version: 0.301.1(vue@3.5.14(typescript@5.8.3))
+        specifier: 0.301.2
+        version: 0.301.2(vue@3.5.14(typescript@5.8.3))
       nocodb-sdk-v2:
         specifier: workspace:^
         version: link:../nocodb-sdk-v2
@@ -1069,8 +1069,8 @@ importers:
         specifier: ^1.7.5
         version: 1.7.5
       nc-lib-gui:
-        specifier: 0.301.1
-        version: 0.301.1
+        specifier: 0.301.2
+        version: 0.301.2
       nestjs-pino:
         specifier: ^3.5.0
         version: 3.5.0(@nestjs/common@10.4.19(class-transformer@0.3.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(pino-http@8.6.1)
@@ -1078,8 +1078,8 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       nocodb-sdk:
-        specifier: 0.301.1
-        version: 0.301.1(debug@4.4.1)(vue@3.5.15(typescript@5.8.3))
+        specifier: 0.301.2
+        version: 0.301.2(debug@4.4.1)(vue@3.5.15(typescript@5.8.3))
       node-sql-parser:
         specifier: ^5.3.6
         version: 5.3.13
@@ -1165,8 +1165,8 @@ importers:
         specifier: ^0.2.2
         version: 0.2.2
       request-filtering-agent:
-        specifier: ^1.1.2
-        version: 1.1.2
+        specifier: ^3.2.0
+        version: 3.2.0
       request-ip:
         specifier: ^3.3.0
         version: 3.3.0
@@ -13748,8 +13748,8 @@ packages:
     resolution: {integrity: sha512-2EfjyM8ITPNdumJvd2CFamPO4dvQdrMAPmw9sK0Ex4mMJ/NagdQTnvm/GVaSVshchISx38D0LG+Xqhl3mPKO2w==}
     engines: {node: '>= 20'}
 
-  nc-lib-gui@0.301.1:
-    resolution: {integrity: sha512-0LiXOTJCf/VQPeyt6eS8A2bC6sniK0OatCHNj1zEme0vf4+rwLFEXHzm/3qY9hlq8sWQrbPnO5OT66z3OtSw3Q==}
+  nc-lib-gui@0.301.2:
+    resolution: {integrity: sha512-vcZwPtwD3gPO/rHhl362DK/jNSX8RGl08LkYGofEcvM9N4FSvAhCHMbNBZ0F6wWpD+7XXw8Me4fnqLdx/hrMAg==}
 
   negotiator@0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
@@ -13826,8 +13826,8 @@ packages:
     resolution: {integrity: sha512-67n1OfusL/ON57fwFJ6ZurSJa/msYVQmqlz9rCel2HJYj4Zeb8v9TcmRdEW+PV2i9Fm2358umSvzZukhw/E8DA==}
     engines: {node: '>=18.20.0 <20 || >=20.12.1'}
 
-  nocodb-sdk@0.301.1:
-    resolution: {integrity: sha512-M9XxsQe79SK80kDVFRrCgQXqDldPfEltpbPDfWHZKsM4tM8yedSf5ntyZump3L2IrPqsfKNmTtfrTzgd7BlVqA==}
+  nocodb-sdk@0.301.2:
+    resolution: {integrity: sha512-H/U8E+SabmNN4x6CbKHNM5wEpkJHZUrMYIseBUD+xeB65OoWU67lMct+p1RhIoNalkWN42cIqaX2v2VUlSS7iA==}
     engines: {node: '>=18'}
 
   node-abi@3.75.0:
@@ -15637,9 +15637,9 @@ packages:
     resolution: {integrity: sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==}
     engines: {node: '>=0.10'}
 
-  request-filtering-agent@1.1.2:
-    resolution: {integrity: sha512-v6uYIoey6rhe+nQXB5rlYEWJI+5SrnvM72XGeLUsykzu2omOEPoW4QmzEH+8/sheK4M/hwQ85L7aPj1cTJfPLg==}
-    deprecated: This version is not maintain. Please upgrade to the latest version.
+  request-filtering-agent@3.2.0:
+    resolution: {integrity: sha512-tKPrKdsmTFuGG1/pBEpzTB66mDZ2lZLW8kjW4N6jj4QjnxUTKrIfv5p2zuJRfztOos86jRPD41lRaGjh+1QqDw==}
+    engines: {node: '>=20.0.0'}
 
   request-ip@3.3.0:
     resolution: {integrity: sha512-cA6Xh6e0fDBBBwH77SLJaJPBmD3nWVAcF9/XAcsrIHdjhFzFiB5aNQFytdjCGPezU3ROwrR11IddKAM08vohxA==}
@@ -16635,10 +16635,12 @@ packages:
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   tar@7.4.3:
     resolution: {integrity: sha512-5S7Va8hKfV7W5U6g3aYxXmlPoZVAwUMy9AOKyF2fVuZa2UD3qZjg578OrLRt8PcNN1PleVaL/5/yYATNL0ICUw==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   tarn@3.0.2:
     resolution: {integrity: sha512-51LAVKUSZSVfI05vjPESNc5vwqqZpbXCsU+/+wxlOrUjk2SnFTt97v9ZgQrD4YmxYW1Px6w2KjaDitCfkvgxMQ==}
@@ -34628,7 +34630,7 @@ snapshots:
     dependencies:
       nc-jsep-plugin-ternary: 1.7.5(nc-jsep@1.7.5)
 
-  nc-lib-gui@0.301.1:
+  nc-lib-gui@0.301.2:
     dependencies:
       express: 4.21.2
     transitivePeerDependencies:
@@ -34803,7 +34805,7 @@ snapshots:
       json-stringify-safe: 5.0.1
       propagate: 2.0.1
 
-  nocodb-sdk@0.301.1(debug@4.4.1)(vue@3.5.15(typescript@5.8.3)):
+  nocodb-sdk@0.301.2(debug@4.4.1)(vue@3.5.15(typescript@5.8.3)):
     dependencies:
       '@vue-flow/core': 1.48.1(vue@3.5.15(typescript@5.8.3))
       acorn-loose: 8.5.2
@@ -34825,7 +34827,7 @@ snapshots:
       - debug
       - vue
 
-  nocodb-sdk@0.301.1(vue@3.5.14(typescript@5.8.3)):
+  nocodb-sdk@0.301.2(vue@3.5.14(typescript@5.8.3)):
     dependencies:
       '@vue-flow/core': 1.48.1(vue@3.5.14(typescript@5.8.3))
       acorn-loose: 8.5.2
@@ -37087,7 +37089,7 @@ snapshots:
 
   repeat-string@1.6.1: {}
 
-  request-filtering-agent@1.1.2:
+  request-filtering-agent@3.2.0:
     dependencies:
       ipaddr.js: 2.2.0
 
